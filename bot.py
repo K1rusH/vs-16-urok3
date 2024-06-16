@@ -7,7 +7,6 @@ bot = telebot.TeleBot(token)
 def start(message):
     bot.reply_to(message, "Привет! Я бот для управления чатом.")
 
-print("программа запущена")
 
 @bot.message_handler(commands=['ban'])
 def ban_user(message):
